@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สรุปเหรียญ นาคาเกมส์ครั้งที่ 42</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap');
+
+section {
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+footer {
+    font-family: 'Noto Sans Thai', sans-serif;
+    text-align: center;
+}
+
+h5 , h6 {
+    text-align: center;
+}
+.detail{
+  text-align: left;
+  font-size : 14px;
+}
+.footer{
+  text-align:left;
+  font-size : 12px;
+  margin-top:8px;
+}
+</style>
+
+<section class="flex flex-col justify-center antialiased bg-gray-100 text-gray-600 min-h-screen p-4">
+    <center>
+    <img src="https://medalrank-nakagame42.pages.dev/logo.svg" alt="" width="100px"></center><br>
+    <div class="h-full">
+        <!-- Table -->
+        <div class="w-full max-w-2xl mx-auto bg-white shadow-lg rounded-sm border border-gray-200">
+            <header class="px-5 py-4 border-b border-gray-100">
+                <h1 class="font-semibold text-gray-800" style="font-size:18px;">สรุปอันดับเหรียญ นาคาเกมส์ครั้งที่ 42</h1>
+                <!-- <h5 class="detail">**เรียงลำดับตามคะแนนเหรียญ**</h5> -->
+            </header>
+            <div class="p-3">
+                <div class="overflow-x-auto">
+                    <table class="table-auto w-full">
+                        <thead class="text-xs font-semibold uppercase text-black-400 bg-gray-50">
+                            <tr>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">คณะ</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left"><img src="https://medalrank-nakagame42.pages.dev/medal/1.png" alt="" width="30px"></div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left"><img src="https://medalrank-nakagame42.pages.dev/medal/2.png" alt="" width="30px"></div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-center"><img src="https://medalrank-nakagame42.pages.dev/medal/3.png" alt="" width="30px"></div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-center">รวมเหรียญ</div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm divide-y divide-gray-100">
+                            <tr>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3"><img src="/img/1.png" width="100" height="50" id="img1">
+                                        </div>
+                                        <div class="font-medium text-gray-800" id="name1"></div>
+                                    </div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center text-yellow-400" id="gold1">0</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center font-medium text-gray-500" id="silver1">0</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center font-medium text-yellow-700" id="bronze1">0</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center font-medium text-black-500" id="sum1">0</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3"><img src="/img/2.png" width="40" height="40" id="img2">
+                                        </div>
+                                        <div class="font-medium text-gray-800" id="name2"></div>
+                                    </div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center text-yellow-400" id="gold2">0</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center font-medium text-gray-500" id="silver2">0</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center font-medium text-yellow-700" id="bronze2">0</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center font-medium text-black-500" id="sum2">0</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3"><img src="/img/3.png" width="40" height="40" id="img3"></div>
+                                        <div class="font-medium text-gray-800" id="name3"></div>
+                                    </div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center text-yellow-400" id="gold3">0</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center font-medium text-gray-500" id="silver3">0</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center font-medium text-yellow-700" id="bronze3">0</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center font-medium text-black-500" id="sum3">0</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3"><img src="/img/4.png" width="40" height="40" id="img4"></div>
+                                        <div class="font-medium text-gray-800" id="name4"></div>
+                                    </div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center text-yellow-400" id="gold4">0</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center font-medium text-gray-500" id="silver4">0</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center font-medium text-yellow-700" id="bronze4">0</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center font-medium text-black-500" id="sum4">0</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3"><img src="/img/5.png" width="40" height="40" id="img5"></div>
+                                        <div class="font-medium text-gray-800" id="name5"></div>
+                                    </div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center text-yellow-400" id="gold5">0</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center font-medium text-gray-500" id="silver5">0</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center font-medium text-yellow-700" id="bronze5">0</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center font-medium text-black-500" id="sum5">0</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <!-- <h6 class="footer">*เหรียญทอง 5 คะแนน <br/>
+            *เหรียญเงิน 3 คะแนน <br/>
+            *เหรียญทองแดง 1 คะแนน <br/>
+        </h6> -->
+    </div><br>
+    <h5 class="p-5" id="time_stamp"></h5>
+    <h6>2024 &copy;  ธีรชานนท์ พวงเงิน</h6>
+    
+</section>
+
+
+
+
+</body>
+<script>
+  
+  document.addEventListener('DOMContentLoaded',function(){
+
+    setInterval(function(){
+
+      let name1 = document.getElementById('name1');
+      let gold1 = document.getElementById('gold1');
+      let silver1 = document.getElementById('silver1');
+      let bronze1 = document.getElementById('bronze1');
+      let img1 = document.getElementById('img1');
+      
+      let sum1 = document.getElementById('sum1');
+     
+      let name2 = document.getElementById('name2');
+      let gold2 = document.getElementById('gold2');
+      let silver2 = document.getElementById('silver2');
+      let bronze2 = document.getElementById('bronze2');
+      let img2 = document.getElementById('img2');
+      let sum2 = document.getElementById('sum2');
+
+      let name3 = document.getElementById('name3');
+      let gold3 = document.getElementById('gold3');
+      let silver3 = document.getElementById('silver3');
+      let bronze3 = document.getElementById('bronze3');
+      let img3 = document.getElementById('img3');
+      let sum3 = document.getElementById('sum3');
+
+      let name4 = document.getElementById('name4');
+      let gold4 = document.getElementById('gold4');
+      let silver4 = document.getElementById('silver4');
+      let bronze4 = document.getElementById('bronze4');
+      let img4 = document.getElementById('img4');
+      let sum4 = document.getElementById('sum4');
+
+      let name5 = document.getElementById('name5');
+      let gold5 = document.getElementById('gold5');
+      let silver5 = document.getElementById('silver5');
+      let bronze5 = document.getElementById('bronze5');
+      let img5 = document.getElementById('img5');
+      let sum5 = document.getElementById('sum5');
+
+      let time_stamp = document.getElementById('time_stamp');
+
+
+      google.script.run
+      .withSuccessHandler(data => {
+
+        name1.innerHTML = data[0];
+        gold1.innerHTML = data[1];
+        silver1.innerHTML = data[2];
+        bronze1.innerHTML = data[3];
+        img1.src = data[4];
+        sum1.innerHTML = data[5];
+        
+        name2.innerHTML = data[6];
+        gold2.innerHTML = data[7];
+        silver2.innerHTML = data[8];
+        bronze2.innerHTML = data[9];
+        img2.src = data[10];
+        sum2.innerHTML = data[11];
+
+        name3.innerHTML = data[12];
+        gold3.innerHTML = data[13];
+        silver3.innerHTML = data[14];
+        bronze3.innerHTML = data[15];
+        img3.src = data[16];
+        sum3.innerHTML = data[17];
+
+        name4.innerHTML = data[18];
+        gold4.innerHTML = data[19];
+        silver4.innerHTML = data[20];
+        bronze4.innerHTML = data[21];
+        img4.src = data[22];
+        sum4.innerHTML = data[23];
+
+        name5.innerHTML = data[24];
+        gold5.innerHTML = data[25];
+        silver5.innerHTML = data[26];
+        bronze5.innerHTML = data[27];
+        img5.src = data[28];
+        sum5.innerHTML = data[29];
+
+        time_stamp.innerHTML = data[30];
+      
+      })
+      .setAutomatically();
+    }, 1000)
+  })
+ 
+ 
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>
